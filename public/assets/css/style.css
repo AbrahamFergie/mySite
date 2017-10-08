@@ -27,6 +27,9 @@ button {
 button:focus {
   outline: 0;
 }
+button:hover {
+  text-decoration: none;
+}
 #naver {
   display: flex;
   justify-content: space-around;
@@ -62,7 +65,23 @@ button:focus {
   text-shadow: 0px 13px 13px #1c1c1c;
   font-size: 3em;
 }
-.contents {
+#contents-1, #contents-2, #contents-3 {
+  background-color:#4d8fac;
+  color: #fafafa;
+  width: 15em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contents-1 {
+  display: flex;
+}
+#contents-2 {
+  display: none;
+}
+#contents-3 {
+  display: none;
 }
 .center-button {
   display: flex;

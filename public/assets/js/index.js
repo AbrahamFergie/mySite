@@ -1,7 +1,5 @@
 (function swing(target) {
-  // the values in props can (and should) be tweaked to modify the way the swing works
-  // * = affected by power
-  var props = {
+  let props = {
     origin: 'top center',   // transformOrigin
     perspective: 600,       // transformPerspective
     ease: Power1.easeInOut, // an easeInOut should really be used here...
@@ -10,7 +8,7 @@
     rotation: -90,          // start rotation, also stores target rotations during tween
     maxrotation: 10,        // * max rotation after starting
     speed: 0.5,             // minimum duration for each swing
-    maxspeed: 0.2           // * extra duration to add to the larger swings (any sort of real physics seems like overkill)
+    maxspeed: 0.2           // * extra duration to add to the larger swings
   }
   props.target = target
 
@@ -19,7 +17,6 @@
 
   TweenMax.to(props, props.duration, { power: 0, delay: 1, onStart: nextSwing, onStartParams: [props] })
 })("#currentView")
-
 function nextSwing(props) {
   if (props.power > 0) {
     props.rotation = (props.rotation > 0 ? -1 : 1) * props.maxrotation * props.power
@@ -28,9 +25,8 @@ function nextSwing(props) {
     TweenMax.to(props.target, props.speed, { rotationX: 0, ease: props.ease, clearProps: 'all' })
   }
 }
-
 document.getElementById("currentView").addEventListener("click",function(ele){
-  var props = {
+  let props = {
     origin: 'top',
     perspective: 600,
     ease: Power1.easeInOut,
@@ -42,19 +38,49 @@ document.getElementById("currentView").addEventListener("click",function(ele){
     maxspeed: 0.2,
     target: ele.target
   }
-
   TweenMax.to(props, props.duration, { power: 0, delay: 0, onStart: nextSwing, onStartParams: [props] })
 })
 
 function directSomewhere(ele) {
-  let tempEle = ele
-  if(!tempEle.className.includes("vanishOut")){
-    tempEle.style.animationDelay = "0s"
-    tempEle.className += " vanishOut"
+  console.log("=====ele======", ele)
+  let contentOne = document.getElementById("contents-1"),
+  contentTwo = document.getElementById("contents-2"),
+  contentThree = document.getElementById("contents-3"),
+  currentEle = ele
+  if(!currentEle.className.includes("vanishOut")){
+    currentEle.style.animationDelay = "0s"
+    if(currentEle.className.includes("vanishIn")){
+      let initialStyle = currentEle.className.indexOf(" vanishIn")
+      let newStyle = currentEle.className.slice(0, initialStyle)
+      currentEle.className = newStyle.trim() + " vanishOut"
+    }
+    currentEle.className += " vanishOut"
     setTimeout(function(){
-      let temp = tempEle.className.indexOf("vanishOut")
-      let newEle = tempEle.className.slice(0, temp)
-      tempEle.className = newEle + " vanishIn"
+      let initialStyle = currentEle.className.indexOf("vanishOut")
+      let newStyle = currentEle.className.slice(0, initialStyle)
+      currentEle.className = newStyle + " vanishIn"
+      if(ele.id === "first"){
+        animateTransition(contentOne)
+        contentTwo.style.display = "none"
+        contentThree.style.display = "none"
+      }
+      if(ele.id === "second"){
+        animateTransition(contentTwo)
+        contentOne.style.display = "none"
+        contentThree.style.display = "none"
+      }
+      if(ele.id === "third"){
+        animateTransition(contentThree)
+        contentOne.style.display = "none"
+        contentTwo.style.display = "none"
+      }
     }, 500)
   }
+}
+
+function animateTransition(ele) {
+  let currentEle = ele
+  currentEle.style.display = "flex"
+  currentEle.className = "magictime spaceInUp"
+  console.log("=====currentEle======", currentEle)
 }
