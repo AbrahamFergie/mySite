@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #635c5c;
+  font-family: "Acme", sans-serif;
+}
+h1 {
+  /*margin: 7px;*/
+  background-color: #67b1ad;
+  border: 2px solid #1c1c1c;
+  color: #eeedff;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 7em;
+  background-color: #16c588;
+  border: 2px solid #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px #514c4c;
+  color: #fafafa;
+}
+button:focus {
+  outline: 0;
+}
+#naver {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+#currentView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  height: -webkit-fill-available;
+}
+#first, #second, #third {
+  border-radius: 5px 5px 50px 50px;
+}
+#view-box {
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border-radius: 0.1em 0.1em 0em 0em;
+  color: #eeedff;
+  border-left: 0px;
+  border-right: 0px;
+  height: 3em;
+  text-shadow: 0px 13px 13px #1c1c1c;
+  font-size: 3em;
+}
+.contents {
+}
+.center-button {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px){
+  #naver {
+    height: 10em;
+    position: relative;
+    bottom: 4em;
+  }
+  #currentView {
+    height: 21em;
+  }
+  #first-rotate {
+    -webkit-transform: rotateZ(28deg) translateY(25px) translateX(25px);
+    transform: rotateZ(28deg) translateY(25px) translateX(25px);
+  }
+  #second-rotate {
+    -webkit-transform: translateY(65px);
+    transform: translateY(65px);
+  }
+  #third-rotate {
+    -webkit-transform: rotate(-28deg) translateX(-25px) translateY(26px);
+    transform: rotate(-28deg) translateX(-25px) translateY(26px);
+  }
+}
+@media (min-width: 768px){
+  #naver {
+    position: relative;
+    bottom: -7em;
+  }
+  button {
+    width: 10em;
+  }
+}
