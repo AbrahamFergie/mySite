@@ -40,17 +40,48 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fafafa;
+  border: 3px groove #1c1c1c;
   height: -webkit-fill-available;
+  box-shadow: 4px 35px 100px #1c1c1c;
+  background-image: url("http://ist.greenville.edu/dm/wp-content/uploads/2014/12/stars_texture2942.jpg");
+  background-size: cover;
+  -webkit-animation: animatedBackground 125s linear infinite;
+  -moz-animation: animatedBackground 125s linear infinite;
+  -o-animation: animatedBackground 125s linear infinite;
+  animation: animatedBackground 125s linear infinite;
+  border: 2px groove #fafafa;
+  border-radius: 5px;
+}
+keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -3000px 0; }
+}
+@-moz-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -3000px 0; }
+}
+@-webkit-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -3000px 0; }
+}
+@-ms-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -3000px 0; }
+}
+@-o-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -3000px 0; }
 }
 #first, #second, #third {
-  border-radius: 5px 5px 50px 50px;
+  border-radius: 50px 50px 0px 0px;
 }
 #view-box {
-  height: 30em;
+  height: 42em;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4em;
+  /*overflow: hidden;*/
 }
 .banner {
   display: flex;
@@ -94,11 +125,14 @@ button:hover {
     bottom: 4em;
   }
   #currentView {
-    height: 21em;
+    height: 26em;
   }
   #first-rotate {
     -webkit-transform: rotateZ(28deg) translateY(25px) translateX(25px);
     transform: rotateZ(28deg) translateY(25px) translateX(25px);
+  }
+  #first, #second, #third {
+    border-radius: 5px 5px 50px 50px;
   }
   #second-rotate {
     -webkit-transform: translateY(65px);
@@ -108,11 +142,16 @@ button:hover {
     -webkit-transform: rotate(-28deg) translateX(-25px) translateY(26px);
     transform: rotate(-28deg) translateX(-25px) translateY(26px);
   }
+  #view-box {
+    height: 29em;
+    margin-top: 0em;
+  }
 }
 @media (min-width: 768px){
   #naver {
     position: relative;
-    bottom: -7em;
+    top: -44.9em;
+    overflow: hidden;
   }
   button {
     width: 10em;
