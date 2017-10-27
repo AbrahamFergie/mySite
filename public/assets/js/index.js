@@ -4,7 +4,7 @@
     perspective: 600,       // transformPerspective
     ease: Power1.easeInOut, // an easeInOut should really be used here...
     power: 1,               // multiplier for the effect that is reduced to 0 over the duration
-    duration: 5,            // total length of the effect (well, it can be up to props.speed longer than this)
+    duration: 2,            // total length of the effect (well, it can be up to props.speed longer than this)
     rotation: -90,          // start rotation, also stores target rotations during tween
     maxrotation: 10,        // * max rotation after starting
     speed: 0.5,             // minimum duration for each swing

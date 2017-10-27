@@ -5,6 +5,7 @@ const app = express()
 
 app.use(express.static(path.join(__dirname, '/')))
 app.get('/', function(req,res) {
+  debugger
   res.sendFile('index.html')
 })
 
