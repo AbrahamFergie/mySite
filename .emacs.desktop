@@ -1,0 +1,91 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Nov  2 14:12:02 2017
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23035 35362 957751 379000) (desktop . "206") "abraham@localhost" nil nil ((((tty-type . "xterm") (tty . "/dev/tty") (display-type . color) (background-mode . light) (foreground-color . "unspecified-fg") (cursor-color . "black") (tool-bar-lines . 0) (vertical-scroll-bars) (menu-bar-lines . 0) (background-color . "unspecified-bg") (font . "tty") (height . 43) (width . 170) (modeline . t) (unsplittable) (internal-border-width . 0) (frameset--id . "93E2-80F1-DA3E-DBFC") (frameset--mini t) (minibuffer . t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 2) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 170) (pixel-height . 42) (total-width . 170) (total-height . 42) (normal-height . 1.0) (normal-width . 1.0) (buffer "index.html" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 1159) (start . 1))))])
+(setq comint-input-ring nil)
+(setq compile-history nil)
+(setq desktop-missing-file-warning nil)
+(setq dired-regexp-history nil)
+(setq extended-command-history nil)
+(setq face-name-history '("magit-diff-our"))
+(setq file-name-history '("/home/abraham/Projects/mySite/" "/home/abraham/Projects/mySite/index.html" "/home/abraham/Projects/myRets/examples/login-search.js" "/home/abraham/Projects/myRets/README.md" "/home/abraham/Projects/mySite/app.js" "/home/abraham/Projects/mySite/###index.html###" "~/Projects/mySite/index.html" "/home/abraham/Projects/mySite/##index.html##" "/home/abraham/Projects/af-portfolio/public/index.html" "~/Projects/mySite/app.js" "/home/abraham/Projects/mySite/##app.js##" "~/Projects/mySite/app.js" "/home/abraham/Projects/mySite/public/" "~/.emacs.d/custom.el" "/home/abraham/Projects/mySite/#app.js#" "~/.emacs.d/custom.el" "/home/abraham/Projects/mySite/#index.html#" "/home/abraham/.emacs.d/" "/usr/" "/usr/share/emacs/24.5/etc/DEBUG" "/home/abraham/.emacs.d/init.el"))
+(setq grep-find-history nil)
+(setq grep-history nil)
+(setq ido-buffer-history nil)
+(setq ido-last-directory-list nil)
+(setq ido-work-directory-list nil)
+(setq ido-work-file-list nil)
+(setq ivy-history '("misterioso" "sanityinc-tomorrow-bright" "misterioso" "sanityinc-tomorrow-bright" "misterioso" "custom-ena" "sanityinc-tomorrow-bright" "misterioso" "sanityinc-tomorrow-bright" "misterioso" "light-blue" "sanityinc-tomorrow-blue" "magenta" "whiteboard" "sanityinc-tomorrow-bright" "deeper-blue" "sanityinc-tomorrow-bright" "manoj-dark" "tsdh-light" "sanityinc-tomorrow-night" "adwaita" "tango-dark" "sanityinc-tomorrow-eighties" "wombat" "deeper-blue" "leuven" "sanityinc-tomorrow-blue" "whiteboard" "dichromacy" "black" "whiteboard" "sanityinc-tomorrow-blue" "leuven" "deeper-blue" "sanityinc-tomorrow-blue" "wombat" "sanityinc-tomorrow-eighties" "deeper-blue" "tango-dark" "dichromacy" "adwaita" "sanityinc-tomorrow-night" "tsdh-light" "whiteboard" "manoj-dark" "deeper-blue" "sanityinc-tomorrow-eighties" "black" "blue" "cyan"))
+(setq minibuffer-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq regexp-search-ring nil)
+(setq register-alist '((48 . "<div class=\"row row-centered\">\n            <div class=\"col-md-3\">\n              <img src=\"https://www.graphqlhub.com/images/graphqlhub-logo.png\">\n            </div>\n            <div class=\"col-md-3\">\n              <img src=\"https://www.graphqlhub.com/images/graphqlhub-logo.png\">\n            </div>\n            <div class=\"col-md-3\">\n              <img src=\"https://www.graphqlhub.com/images/graphqlhub-logo.png\">\n            </div>\n            <div class=\"col-md-3\">\n              <img src=\"https://www.graphqlhub.com/images/graphqlhub-logo.png\">\n            </div>\n          </div>")))
+(setq search-ring nil)
+(setq shell-command-history nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/abraham/Projects/mySite/index.html"
+  "index.html"
+  'js-mode
+  '(inferior-js-keys-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode whitespace-cleanup-mode guide-key-mode hes-mode whole-line-or-region-local-mode undo-tree-mode beacon-mode global-auto-revert-mode company-mode ivy-mode counsel-mode flycheck-mode anzu-mode goto-address-prog-mode paredit-everywhere-mode bug-reference-prog-mode diff-hl-mode symbol-overlay-mode rainbow-delimiters-mode)
+  1159
+  '(1139 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/abraham/Projects/myRets/examples/login-search.js"
+  "login-search.js"
+  'js2-mode
+  '(inferior-js-keys-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode whitespace-cleanup-mode guide-key-mode hes-mode whole-line-or-region-local-mode undo-tree-mode beacon-mode global-auto-revert-mode company-mode ivy-mode counsel-mode flycheck-mode anzu-mode goto-address-prog-mode paredit-everywhere-mode bug-reference-prog-mode diff-hl-mode symbol-overlay-mode rainbow-delimiters-mode)
+  1872
+  '(153 nil)
+  t
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/abraham/Projects/myRets/README.md"
+  "README.md"
+  'markdown-mode
+  '(immortal-scratch-mode auto-compile-on-load-mode projectile-mode guide-key-mode hes-mode whole-line-or-region-local-mode undo-tree-mode beacon-mode global-auto-revert-mode company-mode ivy-mode counsel-mode flycheck-mode anzu-mode)
+  279
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/abraham/Projects/mySite/app.js"
+  "app.js"
+  'js2-mode
+  '(inferior-js-keys-mode immortal-scratch-mode auto-compile-on-load-mode projectile-mode whitespace-cleanup-mode guide-key-mode hes-mode whole-line-or-region-local-mode undo-tree-mode beacon-mode global-auto-revert-mode company-mode ivy-mode counsel-mode flycheck-mode anzu-mode goto-address-prog-mode paredit-everywhere-mode bug-reference-prog-mode diff-hl-mode symbol-overlay-mode rainbow-delimiters-mode)
+  415
+  '(415 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/abraham/Projects/mySite/###index.html###"
+  "###index.html###"
+  'html-mode
+  '(immortal-scratch-mode auto-compile-on-load-mode projectile-mode whitespace-cleanup-mode guide-key-mode hes-mode whole-line-or-region-local-mode undo-tree-mode beacon-mode global-auto-revert-mode company-mode ivy-mode counsel-mode flycheck-mode anzu-mode symbol-overlay-mode tagedit-mode rainbow-mode)
+  1042
+  '(1042 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-emacs-unix)))
+

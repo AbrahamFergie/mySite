@@ -81,6 +81,6 @@ function directSomewhere(ele) {
 function animateTransition(ele) {
   let currentEle = ele
   currentEle.style.display = "flex"
-  currentEle.className = "magictime spaceInUp"
+  currentEle.className = "magictime vanishIn"
   console.log("=====currentEle======", currentEle)
 }

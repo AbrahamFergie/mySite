@@ -30,6 +30,9 @@ button:focus {
 button:hover {
   text-decoration: none;
 }
+.img-icon {
+	height: 6em;
+}
 #naver {
   display: flex;
   justify-content: space-around;
@@ -74,6 +77,7 @@ keyframes animatedBackground {
 }
 #first, #second, #third {
   border-radius: 50px 50px 0px 0px;
+	border-bottom: #fafafa;
 }
 #view-box {
   height: 42em;
@@ -104,6 +108,8 @@ keyframes animatedBackground {
   display: flex;
   justify-content: center;
   align-items: center;
+	height: 38em;
+	width: 64em;
 }
 #contents-1 {
   display: flex;
@@ -150,7 +156,7 @@ keyframes animatedBackground {
 @media (min-width: 768px){
   #naver {
     position: relative;
-    top: -44.9em;
+    top: -45em;
     overflow: hidden;
   }
   button {
