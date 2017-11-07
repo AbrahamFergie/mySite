@@ -1,11 +1,30 @@
 body {
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #635c5c;
-  font-family: "Acme", sans-serif;
+  background-image: url('https://ak6.picdn.net/shutterstock/videos/11962046/thumb/1.jpg');
+	background-size: cover;
+  font-family: "Acme", sans-serif;*/
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	height: auto;
+	width: auto;
+	margin: auto;
+/*  border: 3px groove #1c1c1c;
+  height: -webkit-fill-available;
+  box-shadow: 4px 35px 100px #1c1c1c;*/
+  background-image: url("http://ist.greenville.edu/dm/wp-content/uploads/2014/12/stars_texture2942.jpg");
+  background-size: cover;
+  -webkit-animation: animatedBackground 125s linear infinite;
+  -moz-animation: animatedBackground 125s linear infinite;
+  -o-animation: animatedBackground 125s linear infinite;
+  animation: animatedBackground 125s linear infinite;
+ /* border: 2px groove #fafafa;
+  border-radius: 5px;*/
 }
+
 h1 {
   /*margin: 7px;*/
   background-color: #67b1ad;
@@ -21,7 +40,6 @@ button {
   background-color: #16c588;
   border: 2px solid #1c1c1c;
   border-radius: 10px;
-  box-shadow: 0px 15px 20px #514c4c;
   color: #fafafa;
 }
 button:focus {
@@ -31,7 +49,14 @@ button:hover {
   text-decoration: none;
 }
 .img-icon {
-	height: 6em;
+	height: 3em;
+	margin-right: 4em;
+	margin-left: 4em;
+}
+.center {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 #naver {
   display: flex;
@@ -45,15 +70,14 @@ button:hover {
   align-items: center;
   border: 3px groove #1c1c1c;
   height: -webkit-fill-available;
-  box-shadow: 4px 35px 100px #1c1c1c;
-  background-image: url("http://ist.greenville.edu/dm/wp-content/uploads/2014/12/stars_texture2942.jpg");
-  background-size: cover;
-  -webkit-animation: animatedBackground 125s linear infinite;
-  -moz-animation: animatedBackground 125s linear infinite;
-  -o-animation: animatedBackground 125s linear infinite;
-  animation: animatedBackground 125s linear infinite;
-  border: 2px groove #fafafa;
+  box-shadow: 0px 15px 35px #9a9a9a;
+	background-color: #1c1c1c;
   border-radius: 5px;
+	overflow: scroll;
+}
+.center-item {
+	display: flex;
+	justify-content: center;
 }
 keyframes animatedBackground {
   0% { background-position: 0 0; }
@@ -100,8 +124,11 @@ keyframes animatedBackground {
   text-shadow: 0px 13px 13px #1c1c1c;
   font-size: 3em;
 }
+.size-item {
+  height: 16em;
+	width: 26.3em;
+}
 #contents-1, #contents-2, #contents-3 {
-  background-color:#4d8fac;
   color: #fafafa;
   width: 15em;
   height: 5em;
@@ -130,6 +157,12 @@ keyframes animatedBackground {
     position: relative;
     bottom: 4em;
   }
+	.icon-orient {
+		width: 1em;
+	}
+	.center-item{
+		width: 1em;
+	}
   #currentView {
     height: 26em;
   }
