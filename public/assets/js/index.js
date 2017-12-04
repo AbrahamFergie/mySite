@@ -1,4 +1,4 @@
-(function swing(target) {
+/*(function swing(target) {
   let props = {
     origin: 'top center',   // transformOrigin
     perspective: 600,       // transformPerspective
@@ -39,13 +39,14 @@ document.getElementById("currentView").addEventListener("click",function(ele){
     target: ele.target
   }
   TweenMax.to(props, props.duration, { power: 0, delay: 0, onStart: nextSwing, onStartParams: [props] })
-})
+})*/
 
 function directSomewhere(ele) {
   console.log("=====ele======", ele)
   let contentOne = document.getElementById("contents-1"),
   contentTwo = document.getElementById("contents-2"),
   contentThree = document.getElementById("contents-3"),
+  contentFour = document.getElementById("contents-4"),
   currentEle = ele
   if(!currentEle.className.includes("vanishOut")){
     currentEle.style.animationDelay = "0s"
@@ -63,24 +64,36 @@ function directSomewhere(ele) {
         animateTransition(contentOne)
         contentTwo.style.display = "none"
         contentThree.style.display = "none"
+        contentFour.style.display = "none"
       }
       if(ele.id === "second"){
         animateTransition(contentTwo)
         contentOne.style.display = "none"
         contentThree.style.display = "none"
+        contentFour.style.display = "none"
       }
       if(ele.id === "third"){
         animateTransition(contentThree)
         contentOne.style.display = "none"
         contentTwo.style.display = "none"
+        contentFour.style.display = "none"
       }
+      if(ele.id === "fourth"){
+        animateTransition(contentFour)
+        contentOne.style.display = "none"
+        contentTwo.style.display = "none"
+        contentThree.style.display = "none"
+      }
+
     }, 500)
   }
 }
 
 function animateTransition(ele) {
+  let elems = document.getElementsByClassName("swashIn-1")
+  console.log(elems.classList)
   let currentEle = ele
   currentEle.style.display = "flex"
-  currentEle.className = "magictime swashIn"
-  console.log("=====currentEle======", currentEle)
+  currentEle.className = "magictime vanishIn"
+  console.log("=====currentEle======", currentEle.childNodes[1])
 }

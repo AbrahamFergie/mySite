@@ -14,19 +14,31 @@ Copyright (c) 2016 Christian Pucci
 }
 .tinDownIn-1 {
   animation-name: tinDownIn;
-  animation-delay: 4.5s;
+  animation-delay: 3s;
 }
 .tinDownIn-2 {
   animation-name: tinDownIn;
-  animation-delay: 4.8s;
+  animation-delay: 3.3s;
 }
 .tinDownIn-3 {
   animation-name: tinDownIn;
-  animation-delay: 5.1s;
+  animation-delay: 3.6s;
 }
 .tinDownIn-4 {
   animation-name: tinDownIn;
-  animation-delay: 3.8s;
+  animation-delay: 3.9s;
+}
+.tinDownIn-5 {
+  animation-name: tinDownIn;
+  animation-delay: 4.5s;
+}
+.swashIn-1 {
+  animation-name: swashIn;
+  animation-delay: 1s;
+}
+.foolishIn-1 {
+  animation-name: foolishIn;
+  animation-delay: 5s;
 }
 @keyframes puffIn {
   0% {

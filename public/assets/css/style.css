@@ -2,22 +2,9 @@ html {
 	overflow-x: hidden;
 }
 body {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-image: url('https://ak6.picdn.net/shutterstock/videos/11962046/thumb/1.jpg');
-	background-size: cover;
-  font-family: "Acme", sans-serif;*/
-	display: flex;
-  justify-content: center;
-  align-items: center;
 	height: auto;
 	width: auto;
 	margin: auto;
-/*  border: 3px groove #1c1c1c;
-  height: -webkit-fill-available;
-  box-shadow: 4px 35px 100px #1c1c1c;*/
   background-image: url("http://ist.greenville.edu/dm/wp-content/uploads/2014/12/stars_texture2942.jpg");
   background-size: cover;
   -webkit-animation: animatedBackground 125s linear infinite;
@@ -30,9 +17,12 @@ body {
 
 h1 {
   /*margin: 7px;*/
-  background-color: #67b1ad;
-  border: 2px solid #1c1c1c;
   color: #eeedff;
+  padding: 0em;
+}
+hr {
+  background-color: #fafafa;
+  width: 38em;
 }
 button {
   display: flex;
@@ -40,7 +30,7 @@ button {
   align-items: center;
   height: 3em;
   width: 7em;
-  background-color: #16c588;
+  background-color: #7CF9FE;
   border: 2px solid #1c1c1c;
   border-radius: 10px;
   color: #fafafa;
@@ -51,13 +41,26 @@ button:focus {
 button:hover {
   text-decoration: none;
 }
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;#7CF9FE
+}
 .img-icon {
-	height: 3em;
+	height: 2em;
 }
 .center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 18em;
+  border: 3px groove #1c1c1c;
+  box-shadow: 0px 8px 35px #7CF9FE;
+  background-color: #1c1c1c;
+}
+.middlize {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+.stack-center {
+  width: 100%;
 }
 #naver {
   display: flex;
@@ -68,12 +71,7 @@ button:hover {
 #currentView {
   display: flex;
 	justify-content: center;
-	align-items: center;
-	border: 3px groove #1c1c1c;
-	height: -webkit-fill-available;
 	width: -webkit-fill-available;
-	box-shadow: 0px 15px 35px #9a9a9a;
-	background-color: #1c1c1c;
 	overflow-x: hidden;
 }
 .center-item {
@@ -100,51 +98,61 @@ keyframes animatedBackground {
   0% { background-position: 0 0; }
   100% { background-position: -3000px 0; }
 }
-#first, #second, #third {
-  border-radius: 50px 50px 0px 0px;
-	border-bottom: #fafafa;
+#first, #second, #third, #fourth {
+	border: 2px solid burlywood;
+	border-bottom: 4px solid burlywood;
+	color: chocolate;
 }
 #view-box {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 4em;
   /*overflow: hidden;*/
 }
 .content-title {
+  margin-top: 1em;
 }
 .banner { 
   color: #eeedff;
-  font-size: 3em;
+  font-size: 4em;
+}
+.banner-2 {
+  color: #eeedff;
 }
 .size-item {
-  height: -webkit-fill-available;
-	width: auto;
+  height: 12em;
+	width: 17em;
 }
-#contents-1, #contents-2, #contents-3 {
+#contents-1, #contents-2, #contents-3, #contents-4 {
   color: #fafafa;
-  width: 15em;
-  height: 5em;
-  display: flex;
   justify-content: center;
   align-items: center;
-	height: 38em;
-	width: 64em;
+	height: 27em;
+	width: 89em;
 }
 #contents-1 {
   display: flex;
 }
 #contents-2 {
   display: none;
+  justify-content: space-evenly;
 }
 #contents-3 {
+  display: none;
+}
+#contents-4 {
   display: none;
 }
 .center-button {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 767px){
+@media (max-width: 390px){
+	.banner {
+		font-size: 2.3em;
+	}
+	.content-center {
+	}
   #naver {
     height: 10em;
     position: absolute;
@@ -152,7 +160,7 @@ keyframes animatedBackground {
   }
 	.size-item {
 		height: 13em;	
-		width: auto;
+		width: 100%;
 	}
 	.icon-orient {
 		width: 1em;
@@ -160,7 +168,68 @@ keyframes animatedBackground {
 	.center-item{
 		width: 1em;
 	}
-  #currentView {
+  #contents-1 {
+    margin-top: 1em;
+    flex-direction: column;
+    overflow-y: auto;
+    height: fit-content;
+  }
+  .center {
+    width: 100%;
+  }
+	.content-title {
+		font-size: 1.5em;
+		margin-top: 0em;
+	}
+ 	#currentView {
+    height: 26em;
+  }
+  #first-rotate {
+    -webkit-transform: rotateZ(28deg) translateY(25px) translateX(25px);
+    transform: rotateZ(28deg) translateY(25px) translateX(25px);
+  }
+  #first, #second, #third {
+    border-radius: 5px 5px 50px 50px;
+  }
+  #second-rotate {
+    -webkit-transform: translateY(65px);
+    transform: translateY(65px);
+  }
+  #third-rotate {
+    -webkit-transform: rotate(-28deg) translateX(-25px) translateY(26px);
+    transform: rotate(-28deg) translateX(-25px) translateY(26px);
+  }
+  #view-box {
+    height: 29em;
+    margin-top: 0em;
+  }
+}
+@media (max-width: 500px){
+  #naver {
+    height: 10em;
+    position: absolute;
+    bottom: 3%;
+  }
+	.size-item {
+		height: 13em;	
+		width: 100%;
+	}
+	.img-icon-left {
+		margin-left: 1.2em;
+	}
+	.img-icon-right {
+		margin-right: 1.3em;
+	}
+	.icon-orient {
+		width: 1em;
+	}
+	.center-item{
+		width: 1em;
+	}
+	.content-title {
+		margin-top: 0em;
+	}
+ 	#currentView {
     height: 26em;
   }
   #first-rotate {
@@ -185,7 +254,7 @@ keyframes animatedBackground {
 }
 @media (min-width: 768px){
   #naver {
- 
+		margin-bottom: 3em; 
   }
   button {
     width: 10em;
